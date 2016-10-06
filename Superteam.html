@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <title>Build Your Own Super Team!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="superteamstylesheet.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="superteamscript.js"></script>
+        <div id="dialog1" title="Over Budget!">
+            <p>Looks like your team is over $15 budget. Please stay under the fantasy salary cap!</p>
+        </div>
+        <div id="dialog2" title="Unrecognized Player Name">
+            <p>Sorry our system does not recognize entered name.  Please check spelling of player's name?  You can check spelling <a href="nba.com">here</a>.<p>
+        </div>
+        <script type="text/javascript">
+            jQuery( document ).ready( function() {
+                jQuery( "#dialog1").dialog( { 'autoOpen': false } );
+                jQuery('#dialog2' ).dialog( { 'autoOpen': false } );
+            });
+        </script>          
+
+    </head>
+    
+    <body>
+    	<h1>Build Your Own Super Team!</h1>
+    	<h3>Can you beat the Warriors Super Team?</h3>
+
+        <div id= "rules">
+        <h5>Important Notes:</h5> 
+        <ul>
+            <li>Please use full name of player as it appears on NBA.com(First Name Last Name i.e. Lebron James)</li>
+            <li> For all players that have $1 Value, please input individual Offensive Rating and Defensive Rating aquired from <a href="http://www.foxsports.com/nba/stats?season=2015&category=ADVANCED&group=10&sort=5&time=0&pos=2&team=0&qual=1&sortOrder=0&opp=0">Fox Sports</a></li>
+        </ul>
+        </div>
+        
+        <div id="myTeamTable">
+        <table style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th colspan="4"; style="color:red">My Super Team</th>
+                </tr>
+                <tr style="border-bottom:1px solid black;">
+                    <th style="padding:5px;border-left:1px solid black;"><em>My Picks</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Dollar Value</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Player Offensive Rating</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Player Defensive Rating</em></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    	<div class="form1">
+                        <form name="checkListForm">
+							<input type="text" name="checkListItem1"/>
+						</form>
+                        </div>
+						<div id="addButton1">Add</div>
+					</td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="value1"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="offRating1"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="defRating1"></div></td>   
+                      
+                </tr>
+
+                     <tr>
+                    <td>
+                        <div class="form2">
+                    	<form name="checkListForm">
+							<input type="text" name="checkListItem2"/>
+						</form>
+                        </div>
+						<div id="addButton2">Add</div>
+					</td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="value2"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="offRating2"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="defRating2"></div></td>   
+                     
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form3">
+                    	<form name="checkListForm">
+							<input type="text" name="checkListItem3"/>
+						</form>
+                        </div>
+						<div id="addButton3">Add</div>
+					</td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="value3"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="offRating3"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="defRating3"></div></td>       
+                    
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div class="form4">
+                    	<form name="checkListForm">
+							<input type="text" name="checkListItem4"/>
+						</form>
+                        </div>
+						<div id="addButton4">Add</div>
+					</td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="value4"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="offRating4"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="defRating4"></div></td>       
+                     
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div class="form5">
+                    	<form name="checkListForm">
+							<input type="text" name="checkListItem5"/>
+						</form>
+                        </div>
+						<div id="addButton5">Add</div>
+					</td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="value5"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="offRating5"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="defRating5"></div></td>      
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                    </td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div class="teamTotal">Total:</div></td>      
+                    
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="beforeSubmitButton">Submit</div><div id="resetButton">Reset</div></td>      
+                    
+                </tr>
+            
+            </tbody>
+        
+        </table>
+        </div>
+
+        <div id="warriorsTable">
+        <table style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th colspan="3"; style="color:red">Warriors</th>
+                </tr>
+                <tr style="border-bottom:1px solid black;">
+                    <th style="padding:5px;"><em>Warriors Superstars</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Player Offensive Rating</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Player Defensive Rating</em></th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+        
+                <tr>
+                    <td style="padding:5px;">Stephen Curry</td>
+                    <td style="padding:5px;border-left:1px solid black;">124.7</td>
+                    <td style="padding:5px;border-left:1px solid black;">102.0</td>      
+                </tr>
+                
+                <tr>
+                    <td style="padding:5px;">Klay Thompson</td>
+                    <td style="padding:5px;border-left:1px solid black;">112.2</td>
+                    <td style="padding:5px;border-left:1px solid black;">106.9</td>      
+                </tr>
+
+                 <tr>
+                    <td style="padding:5px;">Andre Iguodala</td>
+                    <td style="padding:5px;border-left:1px solid black;">114.6</td>
+                    <td style="padding:5px;border-left:1px solid black;">104.1</td>      
+                </tr>
+
+                <tr>
+                    <td style="padding:5px;">Kevin Durant</td>
+                    <td style="padding:5px;border-left:1px solid black;">121.7</td>
+                    <td style="padding:5px;border-left:1px solid black;">103.3</td>      
+                </tr>
+
+                 <tr>
+                    <td style="padding:5px;">Draymond Green</td>
+                    <td style="padding:5px;border-left:1px solid black;">114.7</td>
+                    <td style="padding:5px;border-left:1px solid black;">99.4</td>      
+                </tr>
+ 
+              </tbody>
+
+        <div id="finalTable">
+        <table style="border-collapse:collapse;">
+            <thead>
+            </thead>
+            <tbody>
+
+        
+                <tr>
+                    <td style="padding:5px; font-weight: bold"><u>My Super Team</u></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black; font-weight: bold"><u>Warriors</u></td>      
+                </tr>
+                
+                <tr>
+                    <td style="padding:5px;"><div id="player1"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriors1"></div></td>      
+                </tr>
+
+                 <tr>
+                    <td style="padding:5px;"><div id="player2"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriors2"></div></td> 
+                </tr>
+
+                <tr>
+                    <td style="padding:5px;"><div id="player3"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriors3"></div></td>       
+                </tr>
+
+                 <tr>
+                    <td style="padding:5px;"><div id="player4"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriors4"></div></td>
+                </tr>
+                <tr>
+                    <td style="padding:5px;"><div id="player5"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriors5"></div></td>       
+                </tr>
+                <tr>
+                    <td style="padding:5px;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>      
+                </tr>
+                <tr>
+                    <td style="padding:5px;"><div id="userOffensiveRating"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriorsOffensiveRating"></div></td>      
+                </tr>
+                <tr>
+                    <td style="padding:5px;"><div id="userDefensiveRating"></div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="warriorsDefensiveRating"></div></td>      
+                </tr>
+                <tr>
+                    <td style="padding:5px;"></td>
+                    <td style="padding:5px;border-left:1px solid black;"><div id="winPercentageColumn">Your Team's Chance of Winning: </div></td>
+                    <td style="padding:5px;border-left:1px solid black;"></td>      
+                </tr>
+                <tr>
+                    <td colspan ="3"; style="padding:5px; text-align: center;"><div id="commentary"></div></td>      
+                </tr>
+ 
+              </tbody>
+        </table>
+        </div>
+
+    </body>
+
+</html>

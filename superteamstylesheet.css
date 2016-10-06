@@ -1,0 +1,202 @@
+form {
+    display: inline-block;
+}
+
+#addButton1 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#00b33c;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#removeButton1 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#addButton2 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#00b33c;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#removeButton2 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#addButton3 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#00b33c;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#removeButton3 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#addButton4 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#00b33c;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#removeButton4 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#addButton5 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#00b33c;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#removeButton5 {
+    display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+#beforeSubmitButton {
+	display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#8effb9;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+#submitButton {
+	display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#00b33c;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+#submittedButton {
+	display: inline-block;
+    height:20px;
+	width:80px;
+	background-color:#a89c9c;
+	font-family:arial;
+	font-weight:normal;
+	font-style: italic;
+	font-size: 14px;
+	color:#000000;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#resetButton {
+	display: inline-block;
+    height:20px;
+	width:75px;
+	background-color:#dd1616;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+#noResetButton {
+	display: inline-block;
+    height:20px;
+	width:80px;
+	background-color:#707172;
+	font-family:arial;
+	font-weight:normal;
+	font-style: italic;
+	font-size: 14px;
+	color:#000000;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:1px;
+}
+
+
+
